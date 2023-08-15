@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fathers Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="container  mx-auto mt-8">
+        <h1 class="text-5xl font-semibold text-center">Manage Your Account <span class="text-amber-500">Balance!</span> </h1>
+        <div class="mt-10 grid grid-cols-3 gap-4 text-white">
+            <div class="bg-teal-500 p-10 rounded-2xl">
+               <h3 class="text-4xl">Deposit</h3> 
+               <h4 class="text-5xl">$<span id="total-deposit">00</span></h4>
+            </div>
+            <div class="bg-amber-500 p-10 rounded-2xl">
+               <h3 class="text-4xl">withdraw</h3> 
+               <h4 class="text-5xl">$<span id="total-withdraw">00</span></h4>
+            </div>
+            <div class="bg-cyan-500 p-10 rounded-2xl">
+               <h3 class="text-4xl">Main Balance</h3> 
+               <h4 class="text-5xl">$<span id="total-amount">1240</span></h4>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 mt-10 gap-6">
+            <div class="bg-violet-500 p-8 text-center rounded-xl">
+                <h1 class="text-3xl text-white mb-4 font-semibold">Deposit Here</h1>
+                <input id="deposit-amount" class="mb-4 w-1/2 text-center rounded-lg" type="text" placeholder="Deposit amount">
+                <button id="deposit-btn" class="px-14 block bg-amber-500 hover:bg-[steelblue] font-medium text-white py-3 rounded-lg mx-auto">Deposit</button>
+            </div>
+            <div class="bg-violet-500 p-8 text-center rounded-xl">
+                <h1 class="text-3xl text-white mb-4 font-semibold">withdraw From Here</h1>
+                <input id="withdraw-amount" class="mb-4 w-1/2 text-center rounded-lg" type="text" placeholder="withdraw amount">
+                <button id="withdraw-btn" class="px-14 block bg-amber-500 hover:bg-[steelblue] font-medium text-white py-3 rounded-lg mx-auto">withdraw</button>
+            </div>
+        </div>
+
+    </section>
+    <script src="bank.js"></script>
+</body>
+</html>
